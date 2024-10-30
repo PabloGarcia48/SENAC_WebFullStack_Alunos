@@ -5,3 +5,8 @@ Exiba o array filtrado no console.
 
 */
 
+const idades = [12, 18, 22, 25, 10, 16];
+
+let maiores18 = idades.filter(n => n >= 18);
+
+console.log(maiores18);

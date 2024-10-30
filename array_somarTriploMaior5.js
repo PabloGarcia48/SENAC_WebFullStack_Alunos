@@ -9,6 +9,18 @@ Dado o array valores = [3, 7, 2, 9, 1, 8, 6]:
 
 */
 
+let valores = [3, 7, 2, 9, 1, 8, 6];
+
+
+let maioresQueCinco = valores.filter(num => num > 5);
+
+
+let triplo = maioresQueCinco.map(num => num * 3);
+
+
+let soma = triplo.reduce((acumulador, valor) => acumulador + valor, 0);
+
+console.log(soma);
 
 
 

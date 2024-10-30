@@ -8,5 +8,14 @@ const readline = require('readline-sync');
 const numeroSecreto = Math.floor(Math.random() * 10) + 1;
 let palpite;
 
+do {
+    palpite = parseInt(readline.question("Adivinhe o número secreto (entre 1 e 10): "));
+    if (palpite !== numeroSecreto) {
+        console.log("Palpite incorreto. Tente novamente.");
+    }
+} while (palpite !== numeroSecreto);
 
+console.log("");
+console.log("Parabéns! Você acertou o número secreto.");
+console.log("");
 

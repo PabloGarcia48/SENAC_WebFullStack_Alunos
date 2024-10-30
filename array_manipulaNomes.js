@@ -6,3 +6,10 @@ Dado o array nomes = ["Ana", "Francisco", "Beatriz", "João", "Eduardo", "Marian
 » Exiba o novo array no console.
 */
 
+let nomes = ["Ana", "Francisco", "Beatriz", "João", "Eduardo", "Mariana"];
+
+let nomesLongos = nomes.filter(nome => nome.length > 5);
+
+let nomesMaiusculos = nomesLongos.map(nome => nome.toUpperCase());
+
+console.log(nomesMaiusculos);

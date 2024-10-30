@@ -14,3 +14,15 @@ Numero: 35
 Acabou!
 */
 
+const readline = require('readline-sync');
+
+const numero = parseInt(readline.question("Digite um número: "))
+
+let contador = 0
+
+while (contador <= numero) {
+    console.log("Numero: " + contador);
+    contador = contador + 1
+}
+
+console.log("Acabou!");

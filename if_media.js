@@ -23,4 +23,3 @@ if (media >= 9) {
 
 console.log("");
 
-// console.log(media);   // este console serve para imprimir o resultado

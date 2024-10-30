@@ -1,7 +1,7 @@
 /*
 Crie um algorítmo que solicite ao usuário uma palavra e devolva o número de vogais que ela tem.
 
-palavra.length = dá o tamanha da palavra
+palavra.length = dá o tamanho da palavra
 vogais.include = verifica se o item está dentro da variável vogais
 
 */
