@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução ao HTML</title>
+</head>
+
+<body>
+    <!-- Cabeçalho da página -->
+    <header>
+        <h1>Aprendendo HTML Básico</h1>
+        <p>Entenda a estrutura e os elementos básicos de uma página HTML.</p>
+    </header>
+
+    <!-- Seção de Introdução -->
+    <div>
+        <h2>O que é HTML?</h2>
+        <p>HTML significa <strong>HyperText Markup Language</strong> (Linguagem de Marcação de Hipertexto). É usado para
+            criar a estrutura de páginas web.</p>
+    </div>
+
+    <!-- Seção com estrutura básica -->
+    <div>
+        <h2>Estrutura Básica de uma Página HTML</h2>
+        <p>Abaixo está a estrutura básica de um documento HTML:</p>
+        <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Título da Página&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;Cabeçalho Principal&lt;/h1&gt;
+        &lt;p&gt;Um parágrafo de exemplo.&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+        </pre>
+    </div>
+
+    <!-- Seção de Tags -->
+    <div>
+        <h2>Tags Comuns no HTML</h2>
+        <ul>
+            <li><strong>&lt;h1&gt; - &lt;h6&gt;</strong>: Títulos e subtítulos.</li>
+            <li><strong>&lt;p&gt;</strong>: Parágrafo de texto.</li>
+            <li><strong>&lt;a&gt;</strong>: Link para outra página.</li>
+            <li><strong>&lt;ul&gt; &lt;li&gt;</strong>: Lista não ordenada.</li>
+            <li><strong>&lt;ol&gt; &lt;li&gt;</strong>: Lista ordenada.</li>
+            <li><strong>&lt;img&gt;</strong>: Imagem.</li>
+            <li><strong>&lt;button&gt;</strong>: Botão.</li>
+        </ul>
+    </div>
+
+    <!-- Exemplo de Imagem -->
+    <div>
+        <h2>Como Inserir uma Imagem</h2>
+        <p>Para adicionar uma imagem em HTML, usamos a tag <code>&lt;img&gt;</code>. Exemplo:</p>
+        <img src="paginacao1.gif" alt="Exemplo de imagem"  width="300">
+        <p>A imagem acima é um exemplo de como adicionar uma imagem. O <strong>atributo src</strong> define o endereço
+            da imagem, enquanto o <strong>alt</strong> descreve a imagem caso não possa ser exibida.</p>
+    </div>
+
+    <!-- Exemplo de Link -->
+    <div>
+        <h2>Exemplo de Link</h2>
+        <p>Veja um <a href="https://www.w3schools.com/html/" target="_blank">exemplo de link</a> para aprender mais
+            sobre HTML.</p>
+    </div>
+
+    <!-- Exemplo de Lista Não Ordenada -->
+    <div>
+        <h2>Exemplo de Lista Não Ordenada</h2>
+        <h3>Lista de itens favoritos</h3>
+        <ul>
+            <li>Pizza</li>
+            <li>Filmes</li>
+            <li>Jogos</li>
+            <li>Livros</li>
+        </ul>
+    </div>
+
+    <!-- Exemplo de Lista Ordenada -->
+    <div>
+        <h2>Exemplo de Lista Ordenada</h2>
+        <h3>Passos para criar uma página HTML</h3>
+        <ol>
+            <li>Crie um arquivo com extensão <code>.html</code>.</li>
+            <li>Adicione a estrutura básica do HTML.</li>
+            <li>Insira o conteúdo entre as tags <code>&lt;body&gt;</code>.</li>
+            <li>Salve o arquivo e abra-o em um navegador.</li>
+        </ol>
+    </div>
+
+    <!-- Exemplo de Botões -->
+    <div>
+        <h2>Exemplo de Botões</h2>
+        <button onclick="window.alert('Botão clicado')">Clique aqui</button>
+        <button onclick="window.location.href='https://www.google.com'">Ir para o Google</button>
+        <p>O primeiro botão exibe uma mensagem quando clicado, enquanto o segundo redireciona o usuário para o Google.
+        </p>
+    </div>
+
+    <!-- Rodapé -->
+    <footer style="background-color: antiquewhite;">
+        <p>Desenvolvido para a aula de Introdução ao HTML - Professor Pablo Garcia</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!-- 
+ Criar uma página e seu algorítmo, para o cálculo do Fatorial de um número.
+ Com os seguintes requisitos:
+ » Tenha um campo para colocar um número;
+ » Tenha um botão de calcular;
+ » Mostre o resultado na tela 
+-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fatorial em JavaScript</title>
+</head>
+<body>
+    <h1>Calculadora de Fatorial</h1>
+    <p>Digite um número para calcular o fatorial:</p>
+    <input type="number" id="numero" min="0" value="5">
+    <button onclick="calcularFatorial()">Calcular</button>
+    <p id="resultado"></p>
+
+    <script>
+        function fatorial(n) {
+            let resultado = 1;
+            for (let i = n; i > 1; i--) {
+                resultado *= i;
+            }
+            return resultado;
+        }
+
+        function calcularFatorial() {
+            const numero = document.getElementById('numero').value;
+            const resultado = fatorial(parseInt(numero));
+            document.getElementById('resultado').textContent = `O fatorial de ${numero} é ${resultado}`;
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

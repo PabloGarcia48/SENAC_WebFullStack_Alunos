@@ -1,0 +1,78 @@
+/* Estilo global */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f4f8;
+    color: #333;
+    min-height: 100vh;
+}
+
+/* Estilo do cabeçalho */
+header {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #007acc;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+/* Estilo principal */
+main {
+    background-color: white;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+div {
+    margin-bottom: 20px;
+}
+
+div h2 {
+    color: #007acc;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #007acc;
+    padding-bottom: 5px;
+}
+
+div p {
+    color: #555;
+    font-size: 1.1em;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+li {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+/* Estilo do link de contato */
+div:last-child p {
+    font-weight: bold;
+    color: #007acc;
+    font-size: 1.1em;
+    text-align: center;
+}
