@@ -1,5 +1,144 @@
-/*
+<!-- 
 Criar uma página na qual tenhamos 4 barras e estas barras sejam ordenadas conforme seu tamanho.
-O Tamanho das barras deve ser dado por inputs e a ordenacao deve acontecer com o apertar de um botao.
-*/
+O Tamanho das barras deve ser dado por inputs e a ordenacao deve acontecer com o apertar de um botao. -->
 
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barras_Pablo</title>
+</head>
+
+<body>
+    <main>
+        <h1>Tamanho de Barras DISC</h1>
+        <div class="barras">
+            <div class="divDominancia">
+                <p>Dominancia</p>
+                <div class="barra dominancia" id="barraD" data-width="50"></div>
+            </div>
+
+            <div class="divInfluencia">
+                <p>Influência</p>
+                <div class="barra influencia" id="barraI" data-width="50"></div>
+            </div>
+            
+            <div class="divEstabilidade">
+                <p>Estabilidade</p>
+                <div class="barra estabilidade" id="barraS" data-width="50"></div>
+            </div>
+            
+            <div class="divConformidade">
+                <p>Conformidade</p>
+                <div class="barra conformidade" id="barraC" data-width="50"></div>
+            </div>
+        </div>
+        <div class="label">
+            <label for="dominancia">Valor Dominancia</label>
+            <input type="number" onchange="atualizarBarra('barraD', this.value)">
+
+            <label for="influencia">Valor Influência</label>
+            <input type="number" onchange="atualizarBarra('barraI', this.value)">
+            
+            <label for="estabilidade">Valor Estabilidade</label>
+            <input type="number" onchange="atualizarBarra('barraS', this.value)">
+            
+            <label for="conformidade">Valor Conformidade</label>
+            <input type="number" onchange="atualizarBarra('barraC', this.value)">
+            
+            <button onclick="ordenarBarras()">Ordenar Barras</button>
+        </div>
+
+    </main>
+
+</body>
+
+<style>
+    main {
+        width: 700px;
+        margin: 0 auto;
+    }
+
+    .barras {
+        display: flex;
+        flex-direction: column;
+    }
+
+    input {
+        width: 50px;
+    }
+
+    .barra {
+        height: 50px;
+        border-radius: 5px;
+        transition: width 0.5s ease;
+    }
+
+    .label {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    button {
+        background-color: rgb(29, 136, 208);
+        color: white;
+        border: none;
+        margin: 30px;
+        padding: 20px;
+        width: 30%;
+        border-radius: 5px;
+    }
+
+    .divDominancia {
+        order: 0;
+    }
+
+    .divInfluencia {
+        order: 0;
+    }
+
+    .divEstabilidade {
+        order: 0;
+    }
+
+    .divConformidade {
+        order: 0;
+    }
+
+    .dominancia {
+        background-color: red;
+    }
+
+    .influencia {
+        background-color: yellow;
+    }
+
+    .estabilidade {
+        background-color: green;
+    }
+
+    .conformidade {
+        background-color: blue;
+    }
+</style>
+
+<script>
+    function atualizarBarra(id, valor) {
+        const barra = document.getElementById(id);
+        barra.style.width = valor + '%';
+        barra.setAttribute('data-width', valor);
+    }
+
+    function ordenarBarras() {
+
+        // TODO: Criar função de ordenar as barras com order
+        
+    }
+</script>
+
+</html>
