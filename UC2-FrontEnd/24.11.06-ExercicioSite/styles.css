@@ -77,3 +77,8 @@ footer {
     right: 20px;
     bottom: 20px;
 }
+
+.fixed-whats:hover {
+    scale: 2;
+    transition: ease 1s;
+}
