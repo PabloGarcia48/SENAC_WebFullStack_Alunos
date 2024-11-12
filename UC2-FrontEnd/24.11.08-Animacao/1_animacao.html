@@ -1,2 +1,50 @@
 <!-- Crie uma página com um quadrado girando infinitamente, mas que quando passar o mouse por cima troque de cor e vire um círculo -->
 
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animação com Hover e Keyframe</title>
+
+</head>
+<body>
+
+    <div class="box">Passe o Mouse</div>
+
+</body>
+
+<style>
+    /* Estilo básico da caixa */
+    .box {
+        width: 100px;
+        height: 100px;
+        background-color: #3498db;
+        margin: 50px auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+        color: #fff;
+        transition: transform 0.3s, background-color 0.3s;
+        animation: spin 5s linear infinite;
+    }
+
+    /* Animação ao passar o mouse */
+    .box:hover {
+        background-color: #e74c3c; /* Muda a cor */
+        border-radius: 50%;
+    }
+
+    /* Keyframes para rotação contínua */
+    @keyframes spin {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+</style>
+
+</html>

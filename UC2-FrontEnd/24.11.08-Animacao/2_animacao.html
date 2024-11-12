@@ -1,2 +1,67 @@
 <!-- Criar um quadrado que se movimenta de um lado para o outro quando apertarmos um botão.
  Adicional, criar um botão para parar a animação -->
+
+
+ <!DOCTYPE html>
+ <html lang="pt-BR">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Animação com Deslocamento e Botão</title>
+ </head>
+ <body>
+ 
+     <div class="box"></div>
+     <button class="button" onclick="startAnimation()">Iniciar Animação</button>
+     <button class="button" onclick="stopAnimation()">Parar Animação</button>
+ 
+     <script>
+         function startAnimation() {
+             const box = document.querySelector('.box');
+             box.classList.add('animate');  // Adiciona a classe que inicia a animação
+         }
+         function stopAnimation() {
+             const box = document.querySelector('.box');
+             box.classList.remove('animate');  // Adiciona a classe que inicia a animação
+         }
+     </script>
+ 
+ <style>
+     /* Estilo básico da caixa */
+     .box {
+         width: 100px;
+         height: 100px;
+         background-color: #3498db;
+         position: absolute;
+         top: 50px;
+         left: 20px;
+     }
+ 
+     /* Keyframes para o movimento de deslocamento */
+     @keyframes slide {
+         0% {left: 20px;}
+         50% {left: 300px;}
+         100% {left: 20px;}
+     }
+ 
+     /* Animação ativa da classe "animate" */
+     .animate {
+         animation: slide 1s forwards infinite;
+     }
+ 
+     /* Estilo do botão */
+     .button {
+         margin-top: 200px;
+         padding: 10px 20px;
+         background-color: #2ecc71;
+         color: #fff;
+         border: none;
+         cursor: pointer;
+         font-size: 16px;
+         border-radius: 5px;
+     }
+ </style>
+ 
+ </body>
+ </html>
+ 
